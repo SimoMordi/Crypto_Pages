@@ -1,7 +1,4 @@
-
-
-const Currencies = () => {
-  const currencies = [
+const cryptocurrencies = [
     { name: "Bitcoin", symbol: "BTC", price: 47000.23, orderType: "buy" },
     { name: "Ethereum", symbol: "ETH", price: 3200.55, orderType: "sell" },
     { name: "Ripple", symbol: "XRP", price: 0.75, orderType: "buy" },
@@ -48,20 +45,4 @@ const Currencies = () => {
     { name: "Basic Attention Token", symbol: "BAT", price: 1.00, orderType: "sell" },
     { name: "0x", symbol: "ZRX", price: 0.50, orderType: "buy" },
   ];
-
-  return (
-    <div className="currencies">
-      {currencies.map((coin) => (
-        <div>
-           <h2>{coin.name}  {coin.symbol} ${coin.price} </h2>
-           
-        </div>      
-      ))}
-      
-
-    </div>
-  );
-};
-
-
-export default Currencies;
+  

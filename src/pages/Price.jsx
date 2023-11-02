@@ -1,19 +1,20 @@
-import { useState, useEffect } from "react";
 
 
-const Price = () => {
-  
-    const [coin, setCoin] = useState(null);
- 
-    useEffect(() => {
-      
-    }, []);
-  
+
+const Price = ({ currencies }) => {
+
+
 
   return (
-
-    <h2>{}</h2>
-  )
+    <div>
+      {currencies.map((coin) => (
+        <div key={coin.symbol}>
+          <h2>{coin.name} ${coin.price}</h2>
+        </div>
+      ))}
+    </div>
+  );
 };
+   
 
 export default Price;
